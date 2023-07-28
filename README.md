@@ -19,11 +19,13 @@ URL Shortener Project Built with .NET 7, MediatR, SQL Server and Memory Cache
  
 # Run
 
-Open the `cmd` and run these commands:
+- Set the Connection String on the `appsettings.json`.
 
-`cd src`
+- Open the `cmd` and run these commands:
 
-`dotnet run --project URLShortener.API\URLShortener.API.`
+    `cd src`
+
+    `dotnet run --project URLShortener.API\URLShortener.API.`
 
 # Application Architecture
 ![](./docs/assets/project-diagram.png)
