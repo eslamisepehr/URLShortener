@@ -1,6 +1,9 @@
 # URL Shortener
 URL Shortener Project Built with .NET 7, MediatR, SQL Server and Memory Cache
 
+# Endpoints
+![](./docs/assets/endpoints.png)
+
 # Technologies
 - [`.NET 7`](https://dotnet.microsoft.com/downloa) - .NET 7, including ASP.NET and ASP.NET Core
 - [`Microsoft SQL Server EF Core Database Provider`](https://learn.microsoft.com/en-us/ef/core/providers/sql-server/?tabs=dotnet-core-cli)
