@@ -1,6 +1,5 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Caching.Memory;
 using URLShortener.Application.Features.ShortUrls;
 using URLShortener.Contracts;
 using URLShortener.Domain;
@@ -16,6 +15,9 @@ namespace URLShortener.API.Controllers
             _mediator = mediator;
         }
 
+        /// <summary>
+        /// Redirect to path
+        /// </summary>
         [HttpGet]
         [Route("/{path}")]
         public async Task<IActionResult> RedirectToPath(string path)
@@ -26,6 +28,9 @@ namespace URLShortener.API.Controllers
                 errors => Problem(errors));
         }
 
+        /// <summary>
+        /// Create short url
+        /// </summary>
         [HttpPost]
         [Route("/Create")]
         [ProducesDefaultResponseType(typeof(ShortUrl))]

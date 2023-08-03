@@ -8,7 +8,6 @@ namespace URLShortener.Infrastructure.Database
         public static void InitializeDatabase(this IServiceScope serviceScope)
         {
             var dbContext = serviceScope.ServiceProvider.GetRequiredService<AppDbContext>();
-            dbContext.Database.EnsureCreated();
             dbContext.Database.Migrate();
         }
     }
